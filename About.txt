@@ -1,0 +1,26 @@
+Teste Integral Trapezoidal
+
+No Fortran
+compile com gfortran -O3 trapz_integral.f90 -o trapz_integral
+execute com ./trapz_integral
+
+No C++
+compile com g++ -O3 trapz_integral.cpp -o trapz_integral
+execute com ./trapezoidal_integration
+
+No Python 
+python3 trapz_integral.py
+
+No Julia
+julia trapz_integral.jl
+
+Esta pequena brincadeira é um teste de integração para comparar diferentes linguagens de programação, C++, Fotran, Python e Julia, da forma que está, Fortran tem a melhor eficiencia, resolvendo em menos de 10 segundos no meu i3 10⁰ gen com 12 ram. 
+
+Testes interessantes são encontrados com N = 1e9 pontos:
+Da forma que está:
+Fortran  ~33.8 s
+C++  ~39.4 s
+Julia  ~75 s (quando não Morto)
+Python = Morto
+
+Esta pequena atividade é util para testar desenpenho e otmização de clusters e supercomputadores.
